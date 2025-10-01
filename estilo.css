@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em; /* Fonte bem grande */
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Espaço entre os botões */
+}
+
+.produto {
+    font-size: 1.5em; /* Texto grande no botão */
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.produto:hover {
+    background-color: #e6f2ff;
+}
+
+#minha-lista-container {
+    margin-top: 40px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#minha-lista {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.8em; /* Itens da lista bem grandes */
+    text-align: left;
+}
+
+#minha-lista li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remover-item {
+    font-size: 1em;
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-enviar-whatsapp {
+    font-size: 1.8em;
+    padding: 25px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.produto.selecionado {
+    background-color: #ff764a; /* Verde vivo, cor do WhatsApp */
+    color: white;
+    border-color: #00000c; /* Um preto mais escuro para a borda */
+    font-weight: bold;
+    transform: scale(1.05); /* Efeito de leve crescimento */
+    transition: all 0.2s ease; /* Animação suave */
+}

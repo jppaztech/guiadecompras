@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Compras Fácil</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+
+    <header>
+        <h1>Guia de Compras</h1>
+        <p>Toque nos produtos para adicionar à sua lista.</p>
+    </header>
+
+    <main>
+        <section id="prateleira">
+            <h2>Mercearia 🥫</h2>
+            <div class="produtos-container">
+                <button class="produto" data-nome="Açúcar">Açúcar 🍚</button>
+                <button class="produto" data-nome="Sal">Sal 🧂</button>
+                <button class="produto" data-nome="Arroz">Arroz 🍚</button>
+                <button class="produto" data-nome="Feijão">Feijão 🫘</button>
+                <button class="produto" data-nome="Farinha">Farinha 🌾</button>
+                <button class="produto" data-nome="Macarrão">Macarrão 🍝</button>
+                <button class="produto" data-nome="Café">Café ☕</button>
+                <button class="produto" data-nome="Leite">Leite 🥛</button>
+                <button class="produto" data-nome="Achocolatado">Achocolatado 🍫</button>
+                <button class="produto" data-nome="Biscoitos">Biscoitos 🍪</button>
+                <button class="produto" data-nome="Chocolate">Chocolate 🍫</button>
+                <button class="produto" data-nome="Cereal">Cereal 🥣</button>
+                <button class="produto" data-nome="Pães">Pães 🍞</button>
+                <button class="produto" data-nome="Requeijão">Requeijão 🧀</button>
+                <button class="produto" data-nome="Queijo">Queijo 🧀</button>
+                <button class="produto" data-nome="Queijo Ralado">Queijo Ralado 🧀</button>
+                <button class="produto" data-nome="Presunto/Peito de Peru">Presunto/Peito de Peru 🍖</button>
+                <button class="produto" data-nome="Margarina/Manteiga">Margarina/Manteiga 🧈</button>
+                <button class="produto" data-nome="Iogurte">Iogurte 🍦</button>
+                <button class="produto" data-nome="Ovos">Ovos 🥚</button>
+                <button class="produto" data-nome="Molho de Tomate">Molho de Tomate 🍅</button>
+                <button class="produto" data-nome="Temperos">Temperos 🌿</button>
+                <button class="produto" data-nome="Óleo">Óleo 🌻</button>
+                <button class="produto" data-nome="Azeite">Azeite 🫒</button>
+                <button class="produto" data-nome="Carnes">Carnes 🥩</button>
+                <button class="produto" data-nome="Fermento">Fermento 🧪</button>
+            </div>
+
+            <h2>Hortifruti 🍎</h2>
+            <div class="produtos-container">
+                <button class="produto" data-nome="Maçã">Maçã 🍎</button>
+                <button class="produto" data-nome="Pêra">Pêra 🍐</button>
+                <button class="produto" data-nome="Banana">Banana 🍌</button>
+                <button class="produto" data-nome="Laranja">Laranja 🍊</button>
+                <button class="produto" data-nome="Uva">Uva 🍇</button>
+                <button class="produto" data-nome="Maracujá">Maracujá 🍈</button>
+                <button class="produto" data-nome="Abacaxi">Abacaxi 🍍</button>
+                <button class="produto" data-nome="Alface">Alface 🥬</button>
+                <button class="produto" data-nome="Tomate">Tomate 🍅</button>
+                <button class="produto" data-nome="Cenoura">Cenoura 🥕</button>
+                <button class="produto" data-nome="Cebola">Cebola 🧅</button>
+                <button class="produto" data-nome="Alho">Alho 🧄</button>
+                <button class="produto" data-nome="Batata">Batata 🥔</button>
+                <button class="produto" data-nome="Beterraba">Beterraba 🍠</button>
+                <button class="produto" data-nome="Couve">Couve 🥬</button>
+            </div>
+
+            <h2>Limpeza 🧼</h2>
+            <div class="produtos-container">
+                <button class="produto" data-nome="Sabão em Pó">Sabão em Pó 🧼</button>
+                <button class="produto" data-nome="Sabão em Barra">Sabão em Barra 🧼</button>
+                <button class="produto" data-nome="Detergente">Detergente 💧</button>
+                <button class="produto" data-nome="Desinfetante">Desinfetante 🦠</button>
+                <button class="produto" data-nome="Amaciante">Amaciante 🌸</button>
+                <button class="produto" data-nome="Água Sanitária">Água Sanitária 🧪</button>
+                <button class="produto" data-nome="Esponja de Pia">Esponja de Pia 🧽</button>
+                <button class="produto" data-nome="Esponja de Aço">Esponja de Aço ✨</button>
+                <button class="produto" data-nome="Sacos de Lixo">Sacos de Lixo 🗑️</button>
+            </div>
+
+            <h2>Higiene Pessoal 🚿</h2>
+            <div class="produtos-container">
+                <button class="produto" data-nome="Sabonete">Sabonete 🧼</button>
+                <button class="produto" data-nome="Creme Dental">Creme Dental 🦷</button>
+                <button class="produto" data-nome="Fio Dental">Fio Dental 🧵</button>
+                <button class="produto" data-nome="Shampoo">Shampoo 🧴</button>
+                <button class="produto" data-nome="Condicionador">Condicionador 🧴</button>
+                <button class="produto" data-nome="Papel Higiênico">Papel Higiênico 🧻</button>
+                <button class="produto" data-nome="Desodorante">Desodorante 🌬️</button>
+                <button class="produto" data-nome="Absorventes">Absorventes 🩹</button>
+                <button class="produto" data-nome="Algodão">Algodão ☁️</button>
+                <button class="produto" data-nome="Acetona">Acetona 💅</button>
+                <button class="produto" data-nome="Barbeador Descartável">Barbeador Descartável 🪒</button>
+                <button class="produto" data-nome="Sabonete Líquido">Sabonete Líquido 🧴</button>
+                <button class="produto" data-nome="Escova de Dente">Escova de Dente 🦷</button>
+                <button class="produto" data-nome="Enxaguante Bucal">Enxaguante Bucal 🧴</button>
+            </div>
+
+             <h2>Utilidades Domésticas 🏠</h2>
+             <div class="produtos-container">
+                <button class="produto" data-nome="Papel Alumínio">Papel Alumínio 🍴</button>
+                <button class="produto" data-nome="Papel Filme">Papel Filme 🎬</button>
+                <button class="produto" data-nome="Papel Toalha">Papel Toalha 🧖‍♀️</button>
+                <button class="produto" data-nome="Guardanapo de Papel">Guardanapo 🍽️</button>
+                <button class="produto" data-nome="Velas">Velas 🕯️</button>
+                <button class="produto" data-nome="Fita Isolante">Fita Isolante ⚡</button>
+                <button class="produto" data-nome="Fita Crepe">Fita Crepe 🩹</button>
+                <button class="produto" data-nome="Lâmpada">Lâmpada 💡</button>
+             </div>
+        </section>
+
+        <section id="minha-lista-container">
+            <h2>Sua Lista</h2>
+            <ul id="minha-lista">
+                </ul>
+            <button id="btn-enviar-whatsapp">
+                Enviar Lista no WhatsApp
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
